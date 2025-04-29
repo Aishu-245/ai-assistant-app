@@ -36,3 +36,67 @@ A full-stack application integrating multiple AI models to provide intelligent a
 ### Installation
 
 1. Clone the repository
+   git clone https://github.com/yourusername/ai-assistant-platform.git
+   cd ai-assistant-platform
+
+2. Install dependencies
+   npm install
+
+3. Create a `.env` file in the root directory with your OpenAI API key
+   OPENAI_API_KEY=your_openai_api_key_here
+
+4. Start the development server
+   npm run dev
+
+5. Open your browser and navigate to `http://localhost:5000`
+
+## Project Structure
+
+├── client/ # Frontend code
+│ ├── src/
+│ │ ├── components/ # UI components
+│ │ ├── hooks/ # Custom React hooks
+│ │ ├── lib/ # Utility functions and API clients
+│ │ ├── pages/ # Page components
+│ │ └── App.tsx # Main application component
+│
+├── server/ # Backend code
+│ ├── index.ts # Server entry point
+│ ├── routes.ts # API route definitions
+│ ├── storage.ts # Data storage implementation
+│ └── openai.ts # OpenAI API integration
+│
+└── shared/ # Shared code between frontend and backend
+└── schema.ts # Data models and validation schemas
+
+
+
+## Supported AI Models
+
+- OpenAI GPT-4
+- OpenAI DALL-E
+- Deepseek Coder (integration ready)
+- Llama 2 (integration ready)
+
+## Future Enhancements
+
+- User authentication and multiple user support
+- Database persistence with PostgreSQL
+- Voice input/output capabilities
+- Mobile application version
+- Additional AI model integrations
+- Customizable UI themes
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [OpenAI](https://openai.com/) for their powerful API
+- [shadcn/ui](https://ui.shadcn.com/) for the component library
+- All open-source libraries used in this project
+
+---
+
+*Note: This project is for educational and demonstration purposes.*
